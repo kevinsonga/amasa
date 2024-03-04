@@ -1,0 +1,173 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Gallery - Developer Songa</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/mobile.css" media="screen and (max-width : 568px)">
+	<script type="text/javascript" src="js/mobile.js"></script>
+	<style>
+		#body {
+  text-align: center;
+}
+
+
+
+ul.gallery {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+ul.gallery li {
+  margin: 10px;
+  overflow: hidden;
+}
+
+ul.gallery a {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+ul.gallery img {
+  width: auto;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+ul.gallery a:hover img {
+  transform: scale(1.1);
+}
+
+ul.gallery a::before {
+  content: '\A';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+ul.gallery a:hover::before {
+  opacity: 1;
+}
+
+ul.gallery a::after {
+  content: '\A';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+ul.gallery a:hover::after {
+  opacity: 1;
+}
+
+	</style>
+</head>
+<body>
+	<div id="header">
+		<a href="index.html" class="logo">
+			<img src="images/logo.jpg" alt="">
+		</a>
+		<ul id="navigation">
+			<li>
+				<a href="index.html">home</a>
+			</li>
+			<li>
+				<a href="about.html">about</a>
+			</li>
+			<li class="selected">
+				<a href="gallery.html">gallery</a>
+			</li>
+			<li>
+				<a href="blog.html">Achievements</a>
+			</li>
+			<li>
+				<a href="contact.html">contact</a>
+			</li>
+		</ul>
+	</div>
+	<div id="body">
+		<h1><span>gallery</span></h1>
+		<ul class="gallery">
+			<li>
+				<a href="gallery-single-post.html">
+					<img src="images/rib.jpeg" alt="">
+				</a>
+			</li>
+			<li>
+				<a href="gallery-single-post.html">
+					<img src="images/rab.jpeg" alt="" style="height: 220px;">
+				</a>
+			</li>
+			<li>
+				<a href="gallery-single-post.html">
+					<img src="images/jj.jpeg" alt="">
+				</a>
+			</li>
+			<li>
+				<a href="gallery-single-post.html">
+					<img src="images/tt.jpeg" alt="">
+				</a>
+			</li>
+			<li>
+				<a href="gallery-single-post.html">
+					<img src="images/yy.jpg" alt="">
+				</a>
+			</li>
+			<li>
+				<a href="gallery-single-post.html">
+					<img src="images/nn.jpg" alt="">
+				</a>
+			</li>
+			<li>
+				<a href="gallery-single-post.html">
+					<img src="images/mm.JPG" alt="">
+				</a>
+			</li>
+			<li>
+				<a href="gallery-single-post.html">
+					<img src="images/pet.jpg" alt="">
+				</a>
+			</li>
+			<li>
+				<a href="gallery-single-post.html">
+					<img src="images/ll.jpg" alt="">
+				</a>
+			</li>
+		</ul>
+	</div>
+	<div id="footer">
+		<div>
+			<p>&copy; 2023 by Developer Kevin Songa. All rights reserved.</p>
+			<ul>
+				<li>
+					<a href="https://twitter.com/home" id="twitter">twitter</a>
+				</li>
+				<li>
+					<a href="https://www.facebook.com/" id="facebook">facebook</a>
+				</li>
+				<li>
+					<a href="https://www.pinterest.com/" id="pinterest">pinterest</a>
+				</li>
+			</ul>
+	
+		</div>
+	</div>
+</body>
+</html>
